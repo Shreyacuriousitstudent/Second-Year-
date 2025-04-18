@@ -45,7 +45,7 @@ Source code and resources
 To run a project:
 
 Clone the repository:
-git clone https://github.com/yourusername/first-year-projects.git
+git clone https://github.com/yourusername/second-year-projects.git
 ✨ Features Across Projects User authentication systems
 
 Real-time chat applications
@@ -58,7 +58,7 @@ Interactive survey data visualizations
 
 Full-stack deployment-ready apps
 
-👨‍💻 Author Name: [Shreya Dubey] GitHub: @Shreyacuriousitstudent Role: Solo Developer Year: First Year Projects Collection
+👨‍💻 Author Name: [Shreya Dubey] GitHub: @Shreyacuriousitstudent Role: Solo Developer Year: Second Year Projects Collection
 
 Let me know if you'd like to include:
 
