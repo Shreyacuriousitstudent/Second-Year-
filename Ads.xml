@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Ad>
+		<ImageUrl>~/Images/Offer1.png</ImageUrl>
+		<NavigateUrl>~/Offers.aspx</NavigateUrl>
+		<AlternateText>20% off on Beverages</AlternateText>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/Images/Offer2.png</ImageUrl>
+		<NavigateUrl>~/Offers.aspx</NavigateUrl>
+		<AlternateText>10% off on Vegetables</AlternateText>
+	</Ad>
+</Advertisements>

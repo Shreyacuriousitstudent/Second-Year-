@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="CA2_Project_5520.MasterPage" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Grocery Shopping</title>
+    <h2>Welcome to Grocery Shopping</h2>
+    <p>Find fresh groceries, snacks, beverages, and daily essentials at the best prices.</p>
+    <asp:Image ID="PromoImage" runat="server" ImageUrl="~/Images/grocery_banner.jpg" Width="100%" />
+    <link rel="stylesheet" type="text/css" href="Theme/Styles.css" />
+        <link href="App_Themes/Default/SkinFile.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+     <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+
+     </asp:Content>
+    <form id="form1" runat="server">
+        <div class="header" runat="server">
+            <div class="logo">Grocery Shopping</div>
+            <asp:Menu ID="MainMenu" runat="server" Orientation="Horizontal">
+                <Items>
+                    <asp:MenuItem Text="Home" NavigateUrl="~/Home.aspx" />
+                    <asp:MenuItem Text="Categories" NavigateUrl="~/Categories.aspx" />
+                    <asp:MenuItem Text="Cart" NavigateUrl="~/Cart.aspx" />
+                    <asp:MenuItem Text="My Account" NavigateUrl="~/MyAccount.aspx" />
+                </Items>
+            </asp:Menu>
+        </div>
+        <table style="width: 100%;">
+            <tr>
+                <!-- Sidebar with Categories -->
+                <td style="width: 20%; vertical-align: top;">
+                    <asp:TreeView ID="TreeViewCategories" runat="server" CssClass="treeview">
+                        <Nodes>
+                            <asp:TreeNode Text="Grocery Categories" Expanded="True">
+                                <asp:TreeNode Text="Healthy Foods">
+                                    <asp:TreeNode Text="Organic Vegetables" NavigateUrl="Healthy.aspx" />
+                                    <asp:TreeNode Text="Dried Fruits" NavigateUrl="Healthy.aspx" />
+                                    <asp:TreeNode Text="Organic Juices" NavigateUrl="Healthy.aspx" />
+                                </asp:TreeNode>
+                                <asp:TreeNode Text="Fast Foods">
+                                    <asp:TreeNode Text="Frozen Pizza" NavigateUrl="FastFood.aspx" />
+                                    <asp:TreeNode Text="Ready-to-Eat Meals" NavigateUrl="FastFood.aspx" />
+                                </asp:TreeNode>
+                                <asp:TreeNode Text="Beverages">
+                                    <asp:TreeNode Text="Soft Drinks" NavigateUrl="Beverages.aspx" />
+                                    <asp:TreeNode Text="Coffee & Tea" NavigateUrl="Beverages.aspx" />
+                                </asp:TreeNode>
+                                <asp:TreeNode Text="Snacks">
+                                    <asp:TreeNode Text="Chips & Namkeen" NavigateUrl="Snacks.aspx" />
+                                    <asp:TreeNode Text="Chocolates" NavigateUrl="Snacks.aspx" />
+                                </asp:TreeNode>
+                                <asp:TreeNode Text="Daily Essentials">
+                                    <asp:TreeNode Text="Milk & Dairy" NavigateUrl="DailyEssentials.aspx" />
+                                    <asp:TreeNode Text="Bakery" NavigateUrl="DailyEssentials.aspx" />
+                                </asp:TreeNode>
+                                <asp:TreeNode Text="Instant Products">
+                                    <asp:TreeNode Text="Noodles & Pasta" NavigateUrl="InstantProducts.aspx" />
+                                    <asp:TreeNode Text="Soup Mixes" NavigateUrl="InstantProducts.aspx" />
+                                </asp:TreeNode>
+                                <asp:TreeNode Text="Skin Care">
+                                    <asp:TreeNode Text="Moisturizers" NavigateUrl="SkinCare.aspx" />
+                                    <asp:TreeNode Text="Face Wash" NavigateUrl="SkinCare.aspx" />
+                                </asp:TreeNode>
+                                <asp:TreeNode Text="Kitchen Essentials">
+                                    <asp:TreeNode Text="Utensils" NavigateUrl="Kitchen.aspx" />
+                                    <asp:TreeNode Text="Spices & Masalas" NavigateUrl="Kitchen.aspx" />
+                                </asp:TreeNode>
+                                <asp:TreeNode Text="Sanitary Products">
+                                    <asp:TreeNode Text="Hand Wash" NavigateUrl="Sanitary.aspx" />
+                                    <asp:TreeNode Text="Detergents" NavigateUrl="Sanitary.aspx" />
+                                </asp:TreeNode>
+                            </asp:TreeNode>
+                        </Nodes>
+                    </asp:TreeView>
+                </td>
+
+                <!-- Main Content -->
+                <td style="width: 80%; vertical-align: top;">
+                   
+                </td>
+            </tr>
+        </table>
+
+        <div class="footer">
+            <p> 2025 Grocery Shopping App | <a href="About.aspx">About Us</a> | <a href="Contact.aspx">Contact Us</a></p>
+        </div>
+    </form>
+</body>
+</html>
